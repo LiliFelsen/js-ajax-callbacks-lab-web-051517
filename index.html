@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ajax Lab</title>
 
-    <style>
-      .flexbox-container {
-        display: -ms-flex;
-        display: -webkit-flex;
-        display: flex;
-      }
-      .flexbox-container > div {
-        width: 50%;
-        padding: 10px;
-      }
-      .flexbox-container > div:first-child {
-        margin-right: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <main id="main">
-      <div id="errors"></div>
-    </main>
-    <div class="flexbox-container">
-      <div>
-        <h3>Repositories</h3>
-        <div id="results"></div>
-      </div>
-      <div>
-        <h3>Details</h3>
-        <div id="details"></div>
-      </div>
+<head>
+  <title>Ajax Lab</title>
+
+  <style>
+    .flexbox-container {
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+    }
+
+    .flexbox-container>div {
+      width: 50%;
+      padding: 10px;
+    }
+
+    .flexbox-container>div:first-child {
+      margin-right: 20px;
+    }
+  </style>
+  <script src="jquery-3.1.0.min.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <main id="main">
+    <div id="errors"></div>
+  </main>
+
+  <input type="text" id="searchTerms">
+  <a id="searchButton" href="">Search Repositories</a>
+
+  <div class="flexbox-container">
+    <div>
+      <h3>Repositories</h3>
+      <div id="results"></div>
     </div>
-    <script src="jquery-3.1.0.min.js"></script>
-    <script src="index.js"></script>
-  </body>
+    <div>
+      <h3>Details</h3>
+      <div id="details"></div>
+    </div>
+  </div>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script> -->
+</body>
+
 </html>
